@@ -226,7 +226,6 @@ post '/GoWebhook' do
   # Add comment to PR if failure to send notification to submitter
   add_pr_comment(
     pull_comments_url,
-    pull_url,
     "Your Pull Request #{pull_number} has failed automated testing. Please see #{go_job_console_url} for more information."
   ) if pull_status == 'failure'
 
