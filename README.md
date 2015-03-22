@@ -53,3 +53,14 @@ curl -XPOST http://pullgocd.example.local '
 * `github_token` - Application token, requires access to Repo Status (string)
 * `slack_url` - Slack webhook URL (optional string)
 * `authorized_branch` - Branch where PR's are allowed to be submitted (optional string)
+
+## Installation
+* PullGoCD is a sinatra app which obviously requires ruby (tested with 1.9.3)
+* Install gem requirements with `bundle install` if you have the bundler gem installed, otherwise manually install the required gems listed in [app.rb](app.rb)
+* Run the following to start the get running:
+```
+git clone https://github.com/visioncritical/PullGoCD.git
+ruby app.rb
+```
+This will start the app on the default sinatra port 4567
+* You can also run this under [Phusion Passenger](https://www.phusionpassenger.com/) by following the Passenger installation instructions and pointing your config to `/pathto/PullGoCD/public`
