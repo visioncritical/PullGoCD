@@ -1,0 +1,7 @@
+go_user: "gouser"
+go_pass: "password"
+go_server: "go.example.local:8080"
+go_pipeline: "Pipeline1,Pipeline2"
+github_token: "23049230492304920342934"
+#slack_url: "https://hooks.slack.com/services/blahblah"
+#authorized_branch: "development"
